@@ -1,6 +1,6 @@
 "use strict"
-const formatString = function (string) {
+const formatString = function (string, maxStringLength) {
   let returnString
-  returnString = (string.length <= 40) ? string : (string.slice(0, 39) + "...")
+  returnString = (string.length <= maxStringLength) ? string : (string.slice(0, maxStringLength-1) + "...")
   return returnString
 }

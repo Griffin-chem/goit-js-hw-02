@@ -12,8 +12,8 @@ while (input !== null) {
   input = prompt('Введите число')
 }
 if (numbers.length !== 0) {
-  for (const elements of numbers) {
-    total += elements
+  for (const element of numbers) {
+    total += element
   }
   console.log(`Общая сумма чисел равна ${total}`)
 } else {
